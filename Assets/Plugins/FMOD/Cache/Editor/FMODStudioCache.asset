@@ -42,38 +42,11 @@ MonoBehaviour:
   Path: AFG_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638751517363975951
+  lastModified: 638751692772168784
   FileSizes:
   - Name: Desktop
-    Value: 2871648
+    Value: 3775136
   Exists: 1
---- !u!114 &-4182537223242357351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos
-  m_EditorClassIdentifier: 
-  Path: event:/Atmos
-  Guid:
-    Data1: -1084889160
-    Data2: 1317111231
-    Data3: -545450834
-    Data4: 980481065
-  Banks:
-  - {fileID: -6129867795253915925}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 77994
 --- !u!114 &-4101820156715884308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,10 +62,10 @@ MonoBehaviour:
   Path: AFG_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638751517364001596
+  lastModified: 638751692772190191
   FileSizes:
   - Name: Desktop
-    Value: 894
+    Value: 982
   Exists: 1
 --- !u!114 &-3394352962784546183
 MonoBehaviour:
@@ -116,11 +89,38 @@ MonoBehaviour:
   - {fileID: -6129867795253915925}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 129213
+--- !u!114 &-2666616853118373522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy Shoot
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy Shoot
+  Guid:
+    Data1: 1898500992
+    Data2: 1321056953
+    Data3: -425195391
+    Data4: -548137723
+  Banks:
+  - {fileID: -6129867795253915925}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-556633294005913319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,11 +167,67 @@ MonoBehaviour:
   - {fileID: -556633294005913319}
   - {fileID: -3394352962784546183}
   - {fileID: -9125242368271418665}
-  - {fileID: -4182537223242357351}
+  - {fileID: 7051268322284263473}
+  - {fileID: -2666616853118373522}
+  - {fileID: 7318069801005378642}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6129867795253915925}
   StringsBanks:
   - {fileID: -4101820156715884308}
-  cacheTime: 638751517364001596
+  cacheTime: 638751692772190191
   cacheVersion: 131846
+--- !u!114 &7051268322284263473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Atmos 2
+  m_EditorClassIdentifier: 
+  Path: event:/Atmos 2
+  Guid:
+    Data1: -369540079
+    Data2: 1145148857
+    Data3: 1802551472
+    Data4: 2037388707
+  Banks:
+  - {fileID: -6129867795253915925}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 87827
+--- !u!114 &7318069801005378642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Atmos 1
+  m_EditorClassIdentifier: 
+  Path: event:/Atmos 1
+  Guid:
+    Data1: -1084889160
+    Data2: 1317111231
+    Data3: -545450834
+    Data4: 980481065
+  Banks:
+  - {fileID: -6129867795253915925}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 77994

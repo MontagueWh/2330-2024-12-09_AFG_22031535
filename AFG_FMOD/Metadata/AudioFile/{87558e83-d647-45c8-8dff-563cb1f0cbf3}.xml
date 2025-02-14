@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{87558e83-d647-45c8-8dff-563cb1f0cbf3}">
+		<property name="assetPath">
+			<value>403952-Boiling_Lava_-Simplified_Version_-Loop_000006_.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>48</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3cf7e61d-7fe9-4ffc-a9ce-86ba45b37ec8}</destination>
+		</relationship>
+	</object>
+</objects>
