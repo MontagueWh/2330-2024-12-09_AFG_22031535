@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{42964e5e-68d1-43c5-a945-0207b9d7d4d2}">
+		<property name="assetPath">
+			<value>77311-Grunt_long_element_male_25_year_old-BLASTWAVEFX-12999.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.85886621315192746</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3cf7e61d-7fe9-4ffc-a9ce-86ba45b37ec8}</destination>
+		</relationship>
+	</object>
+</objects>
