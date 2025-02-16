@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 0
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000015A54E93608 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001C6B01D1138 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,22 +18,505 @@
 [LOG] BankLoader::serializeBank                : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 146)
 [LOG] BankLoader::serializeBank                : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 146)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] BankLoader::serializeBank                : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 146)
-[LOG] BankLoader::serializeBank                : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 146)
-[LOG] BankLoader::serializeBank                : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 146)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] BankLoader::serializeBank                : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 146)
-[LOG] BankLoader::serializeBank                : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 146)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[WRN] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004. Device was unplugged.
-[WRN] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004. Device was unplugged.
-[WRN] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004. Device was unplugged.
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D65F8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D65F8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744758
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D65F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7322FC238
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7322FC238
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D52C8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C2358828)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7CF3A0228)
+[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {00000000-0000-0000-0000-000000000000}
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C648AD96A8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C648AD96A8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C7317B81D8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C648AD96A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7CEEBF9E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7CEEBF9E8
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D65F8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C649E8B638)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7322FC238)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C648AD99C8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C648AD99C8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C7317B8078
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C648AD99C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7CEEBF088
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7CEEBF088
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C648AD96A8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C2358828)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7CEEBF9E8)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D65F8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D65F8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744CD8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='403952-Boiling_Lava_-Simplified_Version_-Loop_000006_', format=5, channels=2, frequency=48000, lengthbytes=764928, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507599.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D65F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7322FC238
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7322FC238
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D6788, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D6788
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744758
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D6788
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C661264A18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C661264A18
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7CEEBF218, queue head = 000001C655F31FE8, queue count = 0
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7CEEBF9E8, queue head = 000001C655F31FE8, queue count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7CEEBF218
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C64C5B6BF8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7CEEBF218
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7CEEBF9E8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C64C5B6D58
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='403952-Boiling_Lava_-Simplified_Version_-Loop_000006_', format=5, channels=2, frequency=48000, lengthbytes=764928, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507599.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7CEEBF9E8
+[LOG] SoundI::release                          : 403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7C16D5778)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7C23586A8)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7CEEBFE98)
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D6788)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C649E8B638)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C661264A18)
+[LOG] SoundI::release                          : 403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7C16D65F8)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C649E8B1B8)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7322FC238)
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C648AD99C8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C72F928B58)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7CEEBF088)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D65F8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D65F8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E7445F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D65F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C661264888
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C661264888
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7CEEBF218)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C649E8B7B8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C6612643D8)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D6788, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D6788
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744758
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D6788
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C661264A18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C661264A18
+[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {00000000-0000-0000-0000-000000000000}
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D65F8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C649E8B638)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C661264888)
+[LOG] SoundI::release                          : Wind (000001C655F31B78)
+[LOG] SoundI::release                          :     Wind (000001C7C2358228)
+[LOG] SoundI::release                          :     Wind (000001C7CF3A0D18)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D65F8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D65F8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744338
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D65F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C6612640B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C6612640B8
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D6788)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C649E8B7B8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C661264A18)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D6788, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D6788
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744F98
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='403952-Boiling_Lava_-Simplified_Version_-Loop_000006_', format=5, channels=2, frequency=48000, lengthbytes=764928, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507599.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D6788
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C661264248
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C661264248
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D5778, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D5778
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E7445F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D5778
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C661264888
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C661264888
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D52C8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D52C8
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001C656359408, queue head = 000001C655F31FE8, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744758
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D52C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C656359408
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744B78
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='403952-Boiling_Lava_-Simplified_Version_-Loop_000006_', format=5, channels=2, frequency=48000, lengthbytes=764928, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507599.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C656359408
+[LOG] SoundI::release                          : 403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7CEEBF9E8)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C77BC444A8)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C661264EC8)
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D5778)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C649E8B7B8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C661264888)
+[LOG] SoundI::release                          : 403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7C16D6788)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C649E8B638)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C661264248)
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D65F8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C649E8B1B8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C6612640B8)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D65F8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D65F8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E7445F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D65F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C6612646F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C6612646F8
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D6788, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D6788
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744F98
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited', format=5, channels=2, frequency=48000, lengthbytes=1836736, lengthpcm=6202225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988586.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D6788
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C661264888
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C661264888
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D52C8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C732577D98)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C6612643D8)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D52C8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D52C8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744758
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D52C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C661264A18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C661264A18
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D65F8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C732577A98)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C6612646F8)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D5778, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D5778
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E7448B8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D5778
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D65F8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D65F8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744338
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 18000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited', format=5, channels=2, frequency=48000, lengthbytes=1836736, lengthpcm=6202225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988586.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D65F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C661264EC8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C661264EC8
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[LOG] SoundI::release                          : LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited (000001C655F321B8)
+[LOG] SoundI::release                          :     LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited (000001C7C23580A8)
+[LOG] SoundI::release                          :     LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited (000001C7CF3A0098)
+[LOG] SoundI::release                          : LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited (000001C7C16D6788)
+[LOG] SoundI::release                          :     LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited (000001C732577618)
+[LOG] SoundI::release                          :     LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited (000001C661264888)
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D52C8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C732577F18)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C661264A18)
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D6788, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D6788
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744E38
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='403952-Boiling_Lava_-Simplified_Version_-Loop_000006_', format=5, channels=2, frequency=48000, lengthbytes=764928, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507599.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D6788
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7CEEBF9E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7CEEBF9E8
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C655F31B78, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C655F31B78
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E7445F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C655F31B78
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7CEEBFE98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7CEEBFE98
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C655F321B8, queue head = 000001C655F31FE8, queue count = 0
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D52C8, queue head = 000001C655F31FE8, queue count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C655F321B8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744CD8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C655F321B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D52C8
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E744F98
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='403952-Boiling_Lava_-Simplified_Version_-Loop_000006_', format=5, channels=2, frequency=48000, lengthbytes=764928, lengthpcm=2304000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507599.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D52C8
+[LOG] SoundI::release                          : 403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C656359408)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C732577198)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C661264568)
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C655F31B78)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C72F928B58)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7CEEBFE98)
+[LOG] SoundI::release                          : 403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7C16D6788)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C72F9289D8)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7CEEBF9E8)
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D5778)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C732577918)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C661264EC8)
+[WRN] ObjectLookup::get                        : Lookup failed for EventModel: {00000000-0000-0000-0000-000000000000}
+[LOG] SystemI::createSound                     : filename = AFG_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001C7C16D5778, queue head = 000001C655F31FE8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7C16D5778
+[LOG] SystemI::createSoundInternal             :     Create name='AFG_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3763392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001C70E7445F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305', format=5, channels=1, frequency=48000, lengthbytes=130688, lengthpcm=722944, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034978.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7C16D5778
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001C7CEEBFE98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001C7CEEBFE98
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C16D5778)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7C23580A8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7CEEBFE98)
+[LOG] SoundI::release                          : 403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7C16D52C8)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7C2358828)
+[LOG] SoundI::release                          :     403952-Boiling_Lava_-Simplified_Version_-Loop_000006_ (000001C7CEEBF218)
+[LOG] SoundI::release                          : 258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C655F321B8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C72F9280D8)
+[LOG] SoundI::release                          :     258571-KAIB-FIRE-CU-Fire_Crackle_Gas_Furnace-000305 (000001C7CEEBF088)
+[LOG] SoundI::release                          : LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited (000001C7C16D65F8)
+[LOG] SoundI::release                          :     LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited (000001C732577318)
+[LOG] SoundI::release                          :     LIFT265_TK001_SUMMON_Ben_Tinker_Lift_Music_Limited (000001C6612640B8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 2048 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 512 * 4
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] BankLoader::serializeBank                : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 146)
-[LOG] BankLoader::serializeBank                : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 146)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[ERR] ~Global                                  : assertion: 'gSystemInitCount == 0' failed
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::closeInternal                   : Closed.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::closeInternal                   : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
