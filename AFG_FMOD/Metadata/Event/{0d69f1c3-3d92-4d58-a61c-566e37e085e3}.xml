@@ -107,6 +107,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{be1dd5fe-4f76-40c4-823f-20e751846763}">
+		<property name="volume">
+			<value>4</value>
+		</property>
 		<property name="name">
 			<value>Main Music</value>
 		</property>
@@ -177,6 +180,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{e70a399e-d3fa-475d-97ce-c09097926c58}" />
 	<object class="TremoloEffect" id="{1456583e-8b25-47a3-ae4f-a5ede1aa0977}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="frequency">
 			<value>20</value>
 		</property>

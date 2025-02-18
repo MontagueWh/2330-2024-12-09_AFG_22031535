@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: AFG_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638753961795245572
+  lastModified: 638755057946742353
   FileSizes:
   - Name: Desktop
-    Value: 3953952
+    Value: 3950880
   Exists: 1
 --- !u!114 &-4101820156715884308
 MonoBehaviour:
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: AFG_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638753961795270658
+  lastModified: 638755057946762650
   FileSizes:
   - Name: Desktop
-    Value: 1142
+    Value: 1192
   Exists: 1
 --- !u!114 &-3394352962784546183
 MonoBehaviour:
@@ -142,12 +142,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -6129867795253915925}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2500
 --- !u!114 &-556633294005913319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   - {fileID: -6129867795253915925}
   StringsBanks:
   - {fileID: -4101820156715884308}
-  cacheTime: 638753961795270658
+  cacheTime: 638755057946762650
   cacheVersion: 131846
 --- !u!114 &1857213219679907567
 MonoBehaviour:
@@ -234,7 +234,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 7648
+  Length: 0
 --- !u!114 &6960556117440478917
 MonoBehaviour:
   m_ObjectHideFlags: 0
