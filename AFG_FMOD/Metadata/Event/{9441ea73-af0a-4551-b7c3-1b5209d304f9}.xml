@@ -59,18 +59,11 @@
 	<object class="EventAutomatableProperties" id="{bc9029f1-13ff-4038-9762-adc7148bc0f0}" />
 	<object class="MarkerTrack" id="{52127c7b-50d5-4c92-8644-2467fe3dfed2}" />
 	<object class="GroupTrack" id="{cb7f555d-a266-48cc-b86d-bfb1bf83eee1}">
-		<relationship name="modules">
-			<destination>{81b78be6-626d-421f-af8f-c926c99164fa}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{58c44bf1-f3e9-4402-a90b-2ab0e85727cb}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{3248e9e5-d945-4ef8-9d19-1ccb504723de}">
-		<relationship name="modules">
-			<destination>{81b78be6-626d-421f-af8f-c926c99164fa}</destination>
-		</relationship>
-	</object>
+	<object class="Timeline" id="{3248e9e5-d945-4ef8-9d19-1ccb504723de}" />
 	<object class="EventMixerMaster" id="{1dc1b97f-6556-47a1-bfb9-6b7967dbf870}">
 		<relationship name="effectChain">
 			<destination>{9766b5af-7e30-42f1-8420-0b14b160f809}</destination>
@@ -88,17 +81,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a19c0701-396b-430e-84b9-a35118b1875d}" />
-	<object class="SingleSound" id="{81b78be6-626d-421f-af8f-c926c99164fa}">
-		<property name="length">
-			<value>7.6479999999999997</value>
-		</property>
-		<property name="name">
-			<value>Hoverbot Shoot</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{a71e1e96-6333-46d8-b50a-a830a023a1d0}</destination>
-		</relationship>
-	</object>
 	<object class="EventMixerGroup" id="{58c44bf1-f3e9-4402-a90b-2ab0e85727cb}">
 		<property name="name">
 			<value>Shoot</value>
