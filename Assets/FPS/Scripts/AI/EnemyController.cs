@@ -65,12 +65,6 @@ namespace Unity.FPS.AI
         [Header("Sounds")] [Tooltip("Sound played when recieving damages")]
         public AudioClip DamageTick;
 
-
-        [Header("FMOD Events")]
-        [Tooltip("FMOD event for shooting sound")]
-        public FMODUnity.EventReference ShootAudioEvent;
-
-
         [Header("VFX")] [Tooltip("The VFX prefab spawned when the enemy dies")]
         public GameObject DeathVfx;
 
@@ -206,6 +200,8 @@ namespace Unity.FPS.AI
                 m_EyeRendererData.Renderer.SetPropertyBlock(m_EyeColorMaterialPropertyBlock,
                     m_EyeRendererData.MaterialIndex);
             }
+
+            shot = 0f;
         }
 
         void Update()
@@ -412,7 +408,7 @@ namespace Unity.FPS.AI
             }
         }
 
-        public bool TryAtack(Vector3 enemyPosition)
+        public bool TryAttack(Vector3 enemyPosition)
         {
             if (m_GameFlowManager.GameIsEnding)
                 return false;
@@ -425,26 +421,8 @@ namespace Unity.FPS.AI
             // Shoot the weapon
             bool didFire = GetCurrentWeapon().HandleShootInputs(false, true, false);
 
-            // Play FMOD shoot event
-            //FMODUnity.RuntimeManager.PlayOneShot(ShootAudioEvent, transform.position);
-
             if (didFire && onAttack != null)
             {
-                // Calculate the distance to the target
-                float distance = Vector3.Distance(transform.position, enemyPosition);
-
-                // Create an instance of the FMOD event
-                FMOD.Studio.EventInstance shootAudio = FMODUnity.RuntimeManager.CreateInstance(ShootAudioEvent);
-
-                // Set the distance parameter
-                shootAudio.setParameterByName("Distance", distance);
-                shootAudio.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(enemyPosition));
-
-                // Play the FMOD event
-                shootAudio.start();
-                shootAudio.release();
-
-
                 onAttack.Invoke();
 
                 if (SwapToNextWeapon && m_Weapons.Length > 1)
