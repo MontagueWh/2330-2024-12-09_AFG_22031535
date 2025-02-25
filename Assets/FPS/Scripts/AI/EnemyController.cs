@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using FMODUnity;
 using Unity.FPS.Game;
-using UnityEditor.Build.Reporting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
@@ -122,10 +120,10 @@ namespace Unity.FPS.AI
 
         void Start()
         {
-            m_EnemyManager = FindAnyObjectByType<EnemyManager>();
+            m_EnemyManager = FindObjectOfType<EnemyManager>();
             DebugUtility.HandleErrorIfNullFindObject<EnemyManager, EnemyController>(m_EnemyManager, this);
 
-            m_ActorsManager = FindAnyObjectByType<ActorsManager>();
+            m_ActorsManager = FindObjectOfType<ActorsManager>();
             DebugUtility.HandleErrorIfNullFindObject<ActorsManager, EnemyController>(m_ActorsManager, this);
 
             m_EnemyManager.RegisterEnemy(this);
@@ -139,7 +137,7 @@ namespace Unity.FPS.AI
             NavMeshAgent = GetComponent<NavMeshAgent>();
             m_SelfColliders = GetComponentsInChildren<Collider>();
 
-            m_GameFlowManager = FindAnyObjectByType<GameFlowManager>();
+            m_GameFlowManager = FindObjectOfType<GameFlowManager>();
             DebugUtility.HandleErrorIfNullFindObject<GameFlowManager, EnemyController>(m_GameFlowManager, this);
 
             // Subscribe to damage & death actions
@@ -200,8 +198,6 @@ namespace Unity.FPS.AI
                 m_EyeRendererData.Renderer.SetPropertyBlock(m_EyeColorMaterialPropertyBlock,
                     m_EyeRendererData.MaterialIndex);
             }
-
-            shot = 0f;
         }
 
         void Update()
@@ -408,7 +404,7 @@ namespace Unity.FPS.AI
             }
         }
 
-        public bool TryAttack(Vector3 enemyPosition)
+        public bool TryAtack(Vector3 enemyPosition)
         {
             if (m_GameFlowManager.GameIsEnding)
                 return false;

@@ -1,5 +1,4 @@
-﻿using System;
-using Unity.FPS.Game;
+﻿using Unity.FPS.Game;
 using UnityEngine;
 
 namespace Unity.FPS.AI
@@ -26,7 +25,6 @@ namespace Unity.FPS.AI
 
         public ParticleSystem[] OnDetectVfx;
         public AudioClip OnDetectSfx;
-
 
         public AIState AiState { get; private set; }
 
@@ -125,7 +123,7 @@ namespace Unity.FPS.AI
         {
             if (RandomHitSparks.Length > 0)
             {
-                int n = UnityEngine.Random.Range(0, RandomHitSparks.Length - 1);
+                int n = Random.Range(0, RandomHitSparks.Length - 1);
                 RandomHitSparks[n].Play();
             }
 
