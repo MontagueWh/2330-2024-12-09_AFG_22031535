@@ -14,11 +14,6 @@ namespace Unity.FPS.Game
         public UnityAction<float> OnHealed;
         public UnityAction OnDie;
 
-        // FMOD event reference for FMOD assets
-        public FMODUnity.EventReference OnDieAudioEvent;
-        public FMODUnity.EventReference OnHealedAudioEvent;
-        //public FMODUnity.EventReference[] OnDamagedAudioEvent = new FMODUnity.EventReference[2];
-
         public float CurrentHealth { get; set; }
         public bool Invincible { get; set; }
         public bool CanPickup() => CurrentHealth < MaxHealth;
@@ -43,9 +38,6 @@ namespace Unity.FPS.Game
             float trueHealAmount = CurrentHealth - healthBefore;
             if (trueHealAmount > 0f)
             {
-                // Play the heal sound at the GameObject's position
-                FMODUnity.RuntimeManager.PlayOneShot(OnDieAudioEvent, transform.position);
-
                 OnHealed?.Invoke(trueHealAmount);
             }
         }
@@ -63,12 +55,9 @@ namespace Unity.FPS.Game
             float trueDamageAmount = healthBefore - CurrentHealth;
             if (trueDamageAmount > 0f)
             {
-                //FMODUnity.RuntimeManager.PlayOneShot(OnDamagedAudioEvent[0], transform.position);
-
                 OnDamaged?.Invoke(trueDamageAmount, damageSource);
             }
 
-            // Check if the player is dead and handle death
             HandleDeath();
         }
 
@@ -91,10 +80,6 @@ namespace Unity.FPS.Game
             if (CurrentHealth <= 0f)
             {
                 m_IsDead = true;
-
-                // Play the death sound at the GameObject's position
-                FMODUnity.RuntimeManager.PlayOneShot(OnDieAudioEvent, transform.position);
-
                 OnDie?.Invoke();
             }
         }
