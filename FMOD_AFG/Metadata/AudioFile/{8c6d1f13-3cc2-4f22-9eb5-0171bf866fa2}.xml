@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{8c6d1f13-3cc2-4f22-9eb5-0171bf866fa2}">
+		<property name="assetPath">
+			<value>Turret Shoot 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5758f894-4cdb-456e-a2f9-159c7437f00c}</destination>
+		</relationship>
+	</object>
+</objects>
