@@ -165,8 +165,8 @@ namespace Unity.FPS.Game
         private Queue<Rigidbody> m_PhysicalAmmoPool;
 
         // FMOD events
-        public FMODUnity.EventReference ShootAudioEvent;
-        private float shot;
+        //public FMODUnity.EventReference ShootAudioEvent;
+        //private float shot;
 
         void Awake()
         {
@@ -487,11 +487,11 @@ namespace Unity.FPS.Game
                 // Calculate the shot position
                 //Vector3 shotPosition = m_Weapons[m_CurrentWeaponIndex].WeaponMuzzle.position;
 
-                FMOD.Studio.EventInstance enemyShot = FMODUnity.RuntimeManager.CreateInstance(ShootAudioEvent);
-                enemyShot.setParameterByName("Distance", shot, true);
-                enemyShot.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
-                enemyShot.start();
-                enemyShot.release();
+                //FMOD.Studio.EventInstance enemyShot = FMODUnity.RuntimeManager.CreateInstance(ShootAudioEvent);
+                //enemyShot.setParameterByName("Distance", shot, true);
+                //enemyShot.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
+                //enemyShot.start();
+                //enemyShot.release();
             }
 
             // Trigger attack animation if there is any
