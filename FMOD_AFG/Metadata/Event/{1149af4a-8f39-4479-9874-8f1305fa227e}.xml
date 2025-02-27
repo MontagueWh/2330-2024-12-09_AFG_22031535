@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{1149af4a-8f39-4479-9874-8f1305fa227e}">
 		<property name="name">
-			<value>TurretShoot</value>
+			<value>SFX2</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{6394dc28-7a63-4048-906e-6ef943db05fe}</destination>
+			<destination>{1876c752-d0a2-41b7-9ce2-f4a3e27161b1}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{4c4f8567-e8d4-4abe-8e53-bd8d84446b01}</destination>

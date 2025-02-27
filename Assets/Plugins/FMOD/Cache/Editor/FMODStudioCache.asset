@@ -109,7 +109,7 @@ MonoBehaviour:
   - {fileID: 6830452601857237519}
   StringsBanks:
   - {fileID: 6379485343548549748}
-  cacheTime: 638762097340617256
+  cacheTime: 638762552762423820
   cacheVersion: 131846
 --- !u!114 &1093140553686497717
 MonoBehaviour:
@@ -234,7 +234,7 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638762097340617256
+  lastModified: 638762552762423820
   FileSizes:
   - Name: Desktop
     Value: 1070
@@ -254,7 +254,7 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638762097340602182
+  lastModified: 638762552762408765
   FileSizes:
   - Name: Desktop
     Value: 5288832
