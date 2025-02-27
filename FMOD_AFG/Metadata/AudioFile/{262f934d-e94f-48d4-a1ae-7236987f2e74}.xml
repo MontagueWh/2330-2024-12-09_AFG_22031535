@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{262f934d-e94f-48d4-a1ae-7236987f2e74}">
+		<property name="assetPath">
+			<value>69539-Sound_design_element_jet_PAck_rocket_flame_thrower_on_run_off_fireball_burst_longBLASTWAVEFX-07706.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>10.14219954648526</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5758f894-4cdb-456e-a2f9-159c7437f00c}</destination>
+		</relationship>
+	</object>
+</objects>

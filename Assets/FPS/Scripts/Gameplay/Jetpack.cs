@@ -1,6 +1,7 @@
 ﻿using Unity.FPS.Game;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Playables;
 
 namespace Unity.FPS.Gameplay
 {
@@ -37,6 +38,8 @@ namespace Unity.FPS.Gameplay
 
         [Header("Audio")] [Tooltip("Sound played when using the jetpack")]
         public AudioClip JetpackSfx;
+        public FMODUnity.EventReference JetpackAudioEvent;
+        FMOD.Studio.EventInstance JetpackAudioInstance;
 
         bool m_CanUseJetpack;
         PlayerCharacterController m_PlayerCharacterController;
@@ -66,6 +69,9 @@ namespace Unity.FPS.Gameplay
 
             AudioSource.clip = JetpackSfx;
             AudioSource.loop = true;
+
+            JetpackAudioInstance = FMODUnity.RuntimeManager.CreateInstance(JetpackAudioEvent);
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(JetpackAudioInstance, gameObject, GetComponent<Rigidbody>());
         }
 
         void Update()
@@ -114,6 +120,18 @@ namespace Unity.FPS.Gameplay
 
                 if (!AudioSource.isPlaying)
                     AudioSource.Play();
+
+                // Ensure FMOD event follows the player's position and velocity
+                JetpackAudioInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform, m_PlayerCharacterController.CharacterVelocity));
+
+                // Check if event is already playing before starting it
+                FMOD.Studio.PLAYBACK_STATE playbackState;
+                JetpackAudioInstance.getPlaybackState(out playbackState);
+
+                if (playbackState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+                {
+                    JetpackAudioInstance.start();
+                }
             }
             else
             {
@@ -137,6 +155,15 @@ namespace Unity.FPS.Gameplay
 
                 if (AudioSource.isPlaying)
                     AudioSource.Stop();
+
+                // Check if the FMOD event is still playing before stopping it
+                FMOD.Studio.PLAYBACK_STATE playbackState;
+                JetpackAudioInstance.getPlaybackState(out playbackState);
+
+                if (playbackState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+                {
+                    JetpackAudioInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                }
             }
         }
 

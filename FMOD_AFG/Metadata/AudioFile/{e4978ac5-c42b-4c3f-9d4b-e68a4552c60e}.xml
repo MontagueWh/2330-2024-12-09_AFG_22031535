@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e4978ac5-c42b-4c3f-9d4b-e68a4552c60e}">
+		<property name="assetPath">
+			<value>218938-Gas_Burner_Mono_2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>17.232635416666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5758f894-4cdb-456e-a2f9-159c7437f00c}</destination>
+		</relationship>
+	</object>
+</objects>

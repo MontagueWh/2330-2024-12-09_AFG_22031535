@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4630113067025270544
+--- !u!114 &-9060506431413110813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Music/Music1
+  m_Name: event:/Atmos/Atmos1
   m_EditorClassIdentifier: 
-  Path: event:/Atmos/Music/Music1
+  Path: event:/Atmos/Atmos1
   Guid:
-    Data1: 1586333155
-    Data2: 1140736619
-    Data3: 260725689
-    Data4: -34101211
+    Data1: -1642706448
+    Data2: 1278602888
+    Data3: 901541527
+    Data4: 1441649873
   Banks:
   - {fileID: 6830452601857237519}
   IsStream: 1
@@ -26,8 +26,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 277250
---- !u!114 &-3132353109641771565
+  Length: 88000
+--- !u!114 &-8344184569647126901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,14 +37,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX3
+  m_Name: event:/SFX/SFX4
   m_EditorClassIdentifier: 
-  Path: event:/SFX/SFX3
+  Path: event:/SFX/SFX4
   Guid:
-    Data1: -428003775
-    Data2: 1119744154
-    Data3: 1812977814
-    Data4: -597620341
+    Data1: -924469648
+    Data2: 1257523355
+    Data3: 960457917
+    Data4: -1130826210
   Banks:
   - {fileID: 6830452601857237519}
   IsStream: 0
@@ -53,8 +53,62 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 858
---- !u!114 &-2533799784535387449
+  Length: 211
+--- !u!114 &-6723179455878892762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX5
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX5
+  Guid:
+    Data1: 455275484
+    Data2: 1235119739
+    Data3: -1429899881
+    Data4: 1323013322
+  Banks:
+  - {fileID: 6830452601857237519}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 26142
+--- !u!114 &-6644537901637131854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Atmos/Music/Music2
+  m_EditorClassIdentifier: 
+  Path: event:/Atmos/Music/Music2
+  Guid:
+    Data1: -1743699092
+    Data2: 1301084521
+    Data3: 1685078191
+    Data4: -599328370
+  Banks:
+  - {fileID: 6830452601857237519}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 238828
+--- !u!114 &-4700360681043014409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,7 +135,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 137994
---- !u!114 &-1333226886388628090
+--- !u!114 &-1725379670477738006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,22 +178,23 @@ MonoBehaviour:
   - {fileID: 6379485343548549748}
   - {fileID: 6830452601857237519}
   EditorEvents:
-  - {fileID: -3132353109641771565}
-  - {fileID: 3348282557233786805}
-  - {fileID: -2533799784535387449}
-  - {fileID: 2319535733210706626}
-  - {fileID: -1333226886388628090}
-  - {fileID: -4630113067025270544}
-  - {fileID: 8623753489098299090}
-  - {fileID: 5773365859294850678}
+  - {fileID: 3132223227457040610}
+  - {fileID: 4334641319956174791}
+  - {fileID: -4700360681043014409}
+  - {fileID: -6644537901637131854}
+  - {fileID: -8344184569647126901}
+  - {fileID: -1725379670477738006}
+  - {fileID: -6723179455878892762}
+  - {fileID: 4775217195558998996}
+  - {fileID: -9060506431413110813}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6830452601857237519}
   StringsBanks:
   - {fileID: 6379485343548549748}
-  cacheTime: 638762666215214489
+  cacheTime: 638762935782870137
   cacheVersion: 131846
---- !u!114 &2319535733210706626
+--- !u!114 &3132223227457040610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,24 +204,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Music/Music2
+  m_Name: event:/SFX/SFX3
   m_EditorClassIdentifier: 
-  Path: event:/Atmos/Music/Music2
+  Path: event:/SFX/SFX3
   Guid:
-    Data1: -1743699092
-    Data2: 1301084521
-    Data3: 1685078191
-    Data4: -599328370
+    Data1: -428003775
+    Data2: 1119744154
+    Data3: 1812977814
+    Data4: -597620341
   Banks:
   - {fileID: 6830452601857237519}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 238828
---- !u!114 &3348282557233786805
+  Length: 858
+--- !u!114 &4334641319956174791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,7 +248,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &5773365859294850678
+--- !u!114 &4775217195558998996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,23 +258,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX4
+  m_Name: event:/Atmos/Music/Music1
   m_EditorClassIdentifier: 
-  Path: event:/SFX/SFX4
+  Path: event:/Atmos/Music/Music1
   Guid:
-    Data1: -924469648
-    Data2: 1257523355
-    Data3: 960457917
-    Data4: -1130826210
+    Data1: 1586333155
+    Data2: 1140736619
+    Data3: 260725689
+    Data4: -34101211
   Banks:
   - {fileID: 6830452601857237519}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 211
+  Length: 277250
 --- !u!114 &6379485343548549748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,10 +290,10 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638762666215214489
+  lastModified: 638762935782870137
   FileSizes:
   - Name: Desktop
-    Value: 1126
+    Value: 1158
   Exists: 1
 --- !u!114 &6830452601857237519
 MonoBehaviour:
@@ -255,35 +310,8 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638762666215198701
+  lastModified: 638762935782838577
   FileSizes:
   - Name: Desktop
-    Value: 6093312
+    Value: 6369344
   Exists: 1
---- !u!114 &8623753489098299090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Atmos1
-  m_EditorClassIdentifier: 
-  Path: event:/Atmos/Atmos1
-  Guid:
-    Data1: -1642706448
-    Data2: 1278602888
-    Data3: 901541527
-    Data4: 1441649873
-  Banks:
-  - {fileID: 6830452601857237519}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 88000
