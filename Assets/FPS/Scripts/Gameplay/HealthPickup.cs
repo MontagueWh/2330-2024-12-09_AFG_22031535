@@ -7,6 +7,7 @@ namespace Unity.FPS.Gameplay
     {
         [Header("Parameters")] [Tooltip("Amount of health to heal on pickup")]
         public float HealAmount;
+        public FMODUnity.EventReference HealAudioEvent;
 
         protected override void OnPicked(PlayerCharacterController player)
         {
@@ -14,6 +15,7 @@ namespace Unity.FPS.Gameplay
             if (playerHealth && playerHealth.CanPickup())
             {
                 playerHealth.Heal(HealAmount);
+                FMODUnity.RuntimeManager.PlayOneShot(HealAudioEvent, transform.position);
                 PlayPickupFeedback();
                 Destroy(gameObject);
             }

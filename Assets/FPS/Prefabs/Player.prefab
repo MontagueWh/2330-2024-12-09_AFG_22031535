@@ -491,6 +491,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   CriticalHealthRatio: 0.3
+  OnDieAudioEvent:
+    Guid:
+      Data1: -428003775
+      Data2: 1119744154
+      Data3: 1812977814
+      Data4: -597620341
+    Path: event:/SFX/SFX3
+  OnHealedAudioEvent:
+    Guid:
+      Data1: -924469648
+      Data2: 1257523355
+      Data3: 960457917
+      Data4: -1130826210
+    Path: event:/SFX/SFX4
 --- !u!114 &298744117520805562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,10 +853,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8694137560673455815}
   - component: {fileID: 8303093099919959869}
-  - component: {fileID: 306504594}
   - component: {fileID: 2758827746426004724}
   - component: {fileID: 7316344013651781548}
-  - component: {fileID: -5982386060543545930}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -918,14 +930,6 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &306504594
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7442781921941657531}
-  m_Enabled: 1
 --- !u!114 &2758827746426004724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,20 +992,6 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: df837a1f5737d5a489993708ca80ccc9, type: 2}
---- !u!114 &-5982386060543545930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7442781921941657531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonRigidbodyVelocity: 0
-  attenuationObject: {fileID: 0}
 --- !u!1001 &7263037753131886630
 PrefabInstance:
   m_ObjectHideFlags: 0

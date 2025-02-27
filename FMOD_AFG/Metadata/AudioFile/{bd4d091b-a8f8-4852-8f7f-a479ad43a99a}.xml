@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{bd4d091b-a8f8-4852-8f7f-a479ad43a99a}">
+		<property name="assetPath">
+			<value>216795-Potion_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.21126984126984127</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5758f894-4cdb-456e-a2f9-159c7437f00c}</destination>
+		</relationship>
+	</object>
+</objects>

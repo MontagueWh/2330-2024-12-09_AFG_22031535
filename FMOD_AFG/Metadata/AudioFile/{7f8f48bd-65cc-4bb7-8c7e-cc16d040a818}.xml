@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{7f8f48bd-65cc-4bb7-8c7e-cc16d040a818}">
+		<property name="assetPath">
+			<value>275094-Game-Death-Bone-Crunch-2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.8392708333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5758f894-4cdb-456e-a2f9-159c7437f00c}</destination>
+		</relationship>
+	</object>
+</objects>
