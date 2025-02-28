@@ -83,7 +83,7 @@
 	<object class="MixerBusPanner" id="{4e85aacd-aeda-403b-bb18-f87e5f381e92}" />
 	<object class="EventMixerGroup" id="{66493aba-213f-43a4-8034-30675ce7870d}">
 		<property name="name">
-			<value>PlayerShoot</value>
+			<value>PlayerShootGun1</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{fc9b0a2a-fb0c-4b1b-8acc-6b3aa97e397e}</destination>

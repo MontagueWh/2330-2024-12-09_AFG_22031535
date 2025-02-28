@@ -102,7 +102,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{f13bd460-81e7-483a-ac32-4f4eacf08dd2}">
 		<property name="name">
-			<value>PlayerHealed</value>
+			<value>Player Heal</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{a6d1476a-857c-4834-bfe5-28a15562774c}</destination>

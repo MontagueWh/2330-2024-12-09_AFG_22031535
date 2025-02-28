@@ -1210,7 +1210,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1258,10 +1258,10 @@ MonoBehaviour:
       Data2: 1140736619
       Data3: 260725689
       Data4: -34101211
-    Path: event:/IntroMusic
+    Path: event:/Atmos/Music/Music1
   Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

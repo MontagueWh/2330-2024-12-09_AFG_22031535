@@ -1235,7 +1235,7 @@ MonoBehaviour:
       Data2: 1140736619
       Data3: 260725689
       Data4: -34101211
-    Path: event:/IntroMusic
+    Path: event:/Atmos/Music/Music1
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2

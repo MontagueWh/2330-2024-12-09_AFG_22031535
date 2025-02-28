@@ -190,7 +190,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{03359f65-d523-437b-83c8-21b5dfbc8b60}">
 		<property name="volume">
-			<value>7.5</value>
+			<value>6</value>
 		</property>
 		<property name="name">
 			<value>Jetpack</value>
@@ -482,7 +482,7 @@
 			<value>400</value>
 		</property>
 		<property name="earlyDelay">
-			<value>0</value>
+			<value>9.5</value>
 		</property>
 		<property name="lateDelay">
 			<value>17.5</value>
@@ -502,11 +502,14 @@
 		<property name="highCut">
 			<value>7000</value>
 		</property>
+		<property name="earlyLateMix">
+			<value>25</value>
+		</property>
 		<property name="wetLevel">
 			<value>0</value>
 		</property>
 		<property name="dryLevel">
-			<value>-80</value>
+			<value>-10.5</value>
 		</property>
 	</object>
 	<object class="FlangerEffect" id="{a18ca656-cd1e-4a51-9d63-2f9e7cdfb1da}">

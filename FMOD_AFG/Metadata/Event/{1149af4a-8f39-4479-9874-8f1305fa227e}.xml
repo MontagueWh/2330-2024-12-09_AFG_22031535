@@ -106,7 +106,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{0407596f-297f-47ff-ba7c-bb9b0cb06106}">
 		<property name="name">
-			<value>Player shoot</value>
+			<value>PlayerShootGun2</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{a256479c-7157-4499-8b2e-28603182d525}</destination>
