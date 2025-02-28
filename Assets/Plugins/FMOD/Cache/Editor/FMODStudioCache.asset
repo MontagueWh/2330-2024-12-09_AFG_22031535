@@ -187,13 +187,41 @@ MonoBehaviour:
   - {fileID: -6723179455878892762}
   - {fileID: 4775217195558998996}
   - {fileID: -9060506431413110813}
+  - {fileID: 3055609263056430838}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6830452601857237519}
   StringsBanks:
   - {fileID: 6379485343548549748}
-  cacheTime: 638762935782870137
+  cacheTime: 638762947007276450
   cacheVersion: 131846
+--- !u!114 &3055609263056430838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX6
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX6
+  Guid:
+    Data1: 476339074
+    Data2: 1196275441
+    Data3: 1617738908
+    Data4: -1215848512
+  Banks:
+  - {fileID: 6830452601857237519}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 487
 --- !u!114 &3132223227457040610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,10 +318,10 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638762935782870137
+  lastModified: 638762947007276450
   FileSizes:
   - Name: Desktop
-    Value: 1158
+    Value: 1190
   Exists: 1
 --- !u!114 &6830452601857237519
 MonoBehaviour:
@@ -310,8 +338,8 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638762935782838577
+  lastModified: 638762947007255645
   FileSizes:
   - Name: Desktop
-    Value: 6369344
+    Value: 6386784
   Exists: 1

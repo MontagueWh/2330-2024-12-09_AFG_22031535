@@ -79,6 +79,7 @@ namespace Unity.FPS.Gameplay
 
         [Tooltip("Sound played when taking damage froma fall")]
         public AudioClip FallDamageSfx;
+        public FMODUnity.EventReference FallDamageAudioEvent;
 
         [Header("Fall Damage")]
         [Tooltip("Whether the player will recieve damage when hitting the ground at high speed")]
@@ -197,6 +198,7 @@ namespace Unity.FPS.Gameplay
 
                     // fall damage SFX
                     AudioSource.PlayOneShot(FallDamageSfx);
+                    FMODUnity.RuntimeManager.PlayOneShot(FallDamageAudioEvent, transform.position);
                 }
                 else
                 {
