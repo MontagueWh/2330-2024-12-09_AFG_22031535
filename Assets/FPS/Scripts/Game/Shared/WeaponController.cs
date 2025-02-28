@@ -119,11 +119,9 @@ namespace Unity.FPS.Game
 
         [Tooltip("sound played when shooting")]
         public AudioClip ShootSfx;
-        public FMODUnity.EventReference shootAudioEvent;
 
         [Tooltip("Sound played when changing to this weapon")]
         public AudioClip ChangeWeaponSfx;
-        public FMODUnity.EventReference changeWeaponAudioEvent;
 
         [Tooltip("Continuous Shooting Sound")] public bool UseContinuousShootSound = false;
         public AudioClip ContinuousShootStartSfx;
@@ -132,11 +130,8 @@ namespace Unity.FPS.Game
         AudioSource m_ContinuousShootAudioSource = null;
         bool m_WantsToShoot = false;
 
-        public FMODUnity.EventReference continuousShootStartAudioEvent;
-        public FMODUnity.EventReference continuousShootLoopAudioEvent;
-        public FMODUnity.EventReference continuousShootEndAudioEvent;
-
         FMOD.Studio.EventInstance continuousShootAudioInstance;
+        FMODUnity.EventReference continuousShootLoopAudioEvent;
 
 
         public UnityAction OnShoot;
@@ -182,9 +177,11 @@ namespace Unity.FPS.Game
             DebugUtility.HandleErrorIfNullGetComponent<AudioSource, WeaponController>(m_ShootAudioSource, this,
                 gameObject);
 
-            // Initialise FMOD event instances
-            continuousShootAudioInstance = FMODUnity.RuntimeManager.CreateInstance(continuousShootLoopAudioEvent);
-            FMODUnity.RuntimeManager.AttachInstanceToGameObject(continuousShootAudioInstance, gameObject, GetComponent<Rigidbody>());
+            if (!string.IsNullOrEmpty(continuousShootLoopAudioEvent.Path))
+            {
+                continuousShootAudioInstance = FMODUnity.RuntimeManager.CreateInstance(continuousShootLoopAudioEvent);
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(continuousShootAudioInstance, gameObject, GetComponent<Rigidbody>());
+            }
 
             if (UseContinuousShootSound)
             {
@@ -258,8 +255,8 @@ namespace Unity.FPS.Game
                 MuzzleWorldVelocity = (WeaponMuzzle.position - m_LastMuzzlePosition) / Time.deltaTime;
                 m_LastMuzzlePosition = WeaponMuzzle.position;
 
-                if (continuousShootAudioInstance.isValid())
-                    continuousShootAudioInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(WeaponMuzzle));
+                //if (continuousShootAudioInstance.isValid())
+                //    continuousShootAudioInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(WeaponMuzzle));
             }
         }
 
@@ -340,11 +337,11 @@ namespace Unity.FPS.Game
                 }
                 else if (m_ContinuousShootAudioSource.isPlaying)
                 {                    
-                    if (playbackState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+                    /*if (playbackState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
                     {
                         FMODUnity.RuntimeManager.PlayOneShot(continuousShootEndAudioEvent, WeaponMuzzle.position);
                         continuousShootAudioInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                    }
+                    }*/
                 }
             }
         }
@@ -355,8 +352,8 @@ namespace Unity.FPS.Game
 
             if (show && ChangeWeaponSfx)
             {
-                if (!string.IsNullOrEmpty(changeWeaponAudioEvent.Path))
-                    FMODUnity.RuntimeManager.PlayOneShot(changeWeaponAudioEvent, transform.position);
+                //if (!string.IsNullOrEmpty(changeWeaponAudioEvent.Path))
+                //    FMODUnity.RuntimeManager.PlayOneShot(changeWeaponAudioEvent, transform.position);
 
                 m_ShootAudioSource.PlayOneShot(ChangeWeaponSfx);
             }
@@ -474,8 +471,8 @@ namespace Unity.FPS.Game
                 newProjectile.Shoot(this);
             }
 
-            if (!string.IsNullOrEmpty(shootAudioEvent.Path))
-                FMODUnity.RuntimeManager.PlayOneShot(shootAudioEvent, WeaponMuzzle.position);
+            //if (!string.IsNullOrEmpty(shootAudioEvent.Path))
+            //    FMODUnity.RuntimeManager.PlayOneShot(shootAudioEvent, WeaponMuzzle.position);
 
             // muzzle flash
             if (MuzzleFlashPrefab != null)
