@@ -132,6 +132,8 @@ namespace Unity.FPS.Game
 
         FMOD.Studio.EventInstance continuousShootAudioInstance;
         FMODUnity.EventReference continuousShootLoopAudioEvent;
+        FMODUnity.EventReference continuousShootStartAudioEvent;
+        FMODUnity.EventReference continuousShootEndAudioEvent;
 
 
         public UnityAction OnShoot;
@@ -177,6 +179,7 @@ namespace Unity.FPS.Game
             DebugUtility.HandleErrorIfNullGetComponent<AudioSource, WeaponController>(m_ShootAudioSource, this,
                 gameObject);
 
+            // Initialise FMOD continuous shooting instance if assigned
             if (!string.IsNullOrEmpty(continuousShootLoopAudioEvent.Path))
             {
                 continuousShootAudioInstance = FMODUnity.RuntimeManager.CreateInstance(continuousShootLoopAudioEvent);
@@ -254,9 +257,6 @@ namespace Unity.FPS.Game
             {
                 MuzzleWorldVelocity = (WeaponMuzzle.position - m_LastMuzzlePosition) / Time.deltaTime;
                 m_LastMuzzlePosition = WeaponMuzzle.position;
-
-                //if (continuousShootAudioInstance.isValid())
-                //    continuousShootAudioInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(WeaponMuzzle));
             }
         }
 
@@ -337,11 +337,11 @@ namespace Unity.FPS.Game
                 }
                 else if (m_ContinuousShootAudioSource.isPlaying)
                 {                    
-                    /*if (playbackState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+                    if (playbackState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
                     {
                         FMODUnity.RuntimeManager.PlayOneShot(continuousShootEndAudioEvent, WeaponMuzzle.position);
                         continuousShootAudioInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                    }*/
+                    }
                 }
             }
         }
