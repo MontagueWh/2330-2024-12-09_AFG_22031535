@@ -130,11 +130,11 @@ namespace Unity.FPS.Game
         AudioSource m_ContinuousShootAudioSource = null;
         bool m_WantsToShoot = false;
 
-        FMODUnity.EventReference shootAudioEvent;
-        FMODUnity.EventReference changeWeaponAudioEvent;
-        FMODUnity.EventReference continuousShootStartAudioEvent;
-        FMODUnity.EventReference continuousShootLoopAudioEvent;
-        FMODUnity.EventReference continuousShootEndAudioEvent;
+        public FMODUnity.EventReference shootAudioEvent;
+        public FMODUnity.EventReference changeWeaponAudioEvent;
+        public FMODUnity.EventReference continuousShootStartAudioEvent;
+        public FMODUnity.EventReference continuousShootLoopAudioEvent;
+        public FMODUnity.EventReference continuousShootEndAudioEvent;
 
         FMOD.Studio.EventInstance shootAudioInstance;
         FMOD.Studio.EventInstance continuousShootStartAudioInstance;
