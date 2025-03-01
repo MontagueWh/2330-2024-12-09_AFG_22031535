@@ -93,18 +93,6 @@ namespace Unity.FPS.Gameplay
         WeaponSwitchState m_WeaponSwitchState;
         int m_WeaponSwitchNewWeaponIndex;
 
-        public FMODUnity.EventReference shootAudioEvent;
-        public FMODUnity.EventReference changeWeaponAudioEvent;
-        public FMODUnity.EventReference continuousShootStartAudioEvent;
-        public FMODUnity.EventReference continuousShootLoopAudioEvent;
-        public FMODUnity.EventReference continuousShootEndAudioEvent;
-
-        public FMOD.Studio.EventInstance shootAudioInstance;
-        public FMOD.Studio.EventInstance changeWeaponAudioInstance;
-        public FMOD.Studio.EventInstance continuousShootStartAudioInstance;
-        public FMOD.Studio.EventInstance continuousShootLoopAudioInstance;
-        public FMOD.Studio.EventInstance continuousShootEndAudioInstance;
-
 
         void Start()
         {
@@ -457,13 +445,6 @@ namespace Unity.FPS.Gameplay
                     weaponInstance.transform.localPosition = Vector3.zero;
                     weaponInstance.transform.localRotation = Quaternion.identity;
 
-                    // Assign FMOD events
-                    shootAudioInstance = FMODUnity.RuntimeManager.CreateInstance(shootAudioEvent);
-                    changeWeaponAudioInstance = FMODUnity.RuntimeManager.CreateInstance(changeWeaponAudioEvent);
-                    continuousShootStartAudioInstance = FMODUnity.RuntimeManager.CreateInstance(continuousShootStartAudioEvent);
-                    continuousShootLoopAudioInstance = FMODUnity.RuntimeManager.CreateInstance(continuousShootLoopAudioEvent);
-                    continuousShootEndAudioInstance = FMODUnity.RuntimeManager.CreateInstance(continuousShootEndAudioEvent);
-
                     // Set owner to this gameObject so the weapon can alter projectile/damage logic accordingly
                     weaponInstance.Owner = gameObject;
                     weaponInstance.SourcePrefab = weaponPrefab.gameObject;
@@ -574,11 +555,6 @@ namespace Unity.FPS.Gameplay
             if (newWeapon != null)
             {
                 newWeapon.ShowWeapon(true);
-            }
-
-            if (!string.IsNullOrEmpty(changeWeaponAudioEvent.Path))
-            {
-                FMODUnity.RuntimeManager.PlayOneShot(changeWeaponAudioEvent, newWeapon.transform.position);
             }
         }
     }
