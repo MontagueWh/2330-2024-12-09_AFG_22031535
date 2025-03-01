@@ -196,6 +196,9 @@ namespace Unity.FPS.Game
                 m_ContinuousShootAudioSource.outputAudioMixerGroup =
                     AudioUtility.GetAudioGroup(AudioUtility.AudioGroups.WeaponShoot);
                 m_ContinuousShootAudioSource.loop = true;
+
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(continuousShootLoopAudioInstance, gameObject);
+
             }
 
             if (HasPhysicalBullets)
@@ -209,6 +212,14 @@ namespace Unity.FPS.Game
                     m_PhysicalAmmoPool.Enqueue(shell.GetComponent<Rigidbody>());
                 }
             }
+        }
+
+        void OnDestroy()
+        {
+            continuousShootLoopAudioInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            continuousShootLoopAudioInstance.release();
+            continuousShootEndAudioInstance.release();
+            continuousShootStartAudioInstance.release();
         }
 
         public void AddCarriablePhysicalBullets(int count) => m_CarriedPhysicalBullets = Mathf.Max(m_CarriedPhysicalBullets + count, MaxAmmo);
@@ -326,14 +337,15 @@ namespace Unity.FPS.Game
                         m_ShootAudioSource.PlayOneShot(ContinuousShootStartSfx);
                         m_ContinuousShootAudioSource.Play();
 
-
-                        shootAudioInstance.start();
-                        shootAudioInstance.release(); // Ensure it releases once finished
-
-                        continuousShootStartAudioInstance.start();
-                        continuousShootStartAudioInstance.release(); // Ensure it releases once finished
-
                         continuousShootLoopAudioInstance.start();
+                    }
+                }
+
+                else  // Player stopped shooting
+                {
+                    if (m_ContinuousShootAudioSource.isPlaying)
+                    {
+                        continuousShootLoopAudioInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                     }
                 }
             }
