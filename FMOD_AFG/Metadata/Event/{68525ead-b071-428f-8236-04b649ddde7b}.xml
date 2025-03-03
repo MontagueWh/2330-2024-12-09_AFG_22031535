@@ -8,7 +8,7 @@
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{1876c752-d0a2-41b7-9ce2-f4a3e27161b1}</destination>
+			<destination>{d5d0dd0f-fbb6-472b-a048-57e8c1a43f1d}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{03ef3ca5-9181-46f0-aaf4-e866859518d7}</destination>
@@ -31,8 +31,12 @@
 		<relationship name="timeline">
 			<destination>{6eadae9d-56ef-4737-8d54-e94a58b0b9f7}</destination>
 		</relationship>
+		<relationship name="parameters">
+			<destination>{79ededcd-2e67-43f4-a8c3-f02de8393c3c}</destination>
+		</relationship>
 		<relationship name="banks">
 			<destination>{eac35ac5-8b94-4609-b1cd-5d05ab6580ce}</destination>
+			<destination>{9b0fb487-5dae-4f60-941d-924c9e8d8133}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{03ef3ca5-9181-46f0-aaf4-e866859518d7}">
@@ -64,6 +68,11 @@
 		</relationship>
 	</object>
 	<object class="Timeline" id="{6eadae9d-56ef-4737-8d54-e94a58b0b9f7}" />
+	<object class="ParameterProxy" id="{79ededcd-2e67-43f4-a8c3-f02de8393c3c}">
+		<relationship name="preset">
+			<destination>{35a06c86-9a84-4150-b7c2-053542971b68}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{b664e72c-b954-4ce7-a582-0de631214588}">
 		<relationship name="effectChain">
 			<destination>{a711bc31-6555-4ad6-9ef6-7bd08cf2c100}</destination>
@@ -83,7 +92,7 @@
 	<object class="MixerBusPanner" id="{4e85aacd-aeda-403b-bb18-f87e5f381e92}" />
 	<object class="EventMixerGroup" id="{66493aba-213f-43a4-8034-30675ce7870d}">
 		<property name="name">
-			<value>PlayerShootGun1</value>
+			<value>PlayerShotgunShoot</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{fc9b0a2a-fb0c-4b1b-8acc-6b3aa97e397e}</destination>
