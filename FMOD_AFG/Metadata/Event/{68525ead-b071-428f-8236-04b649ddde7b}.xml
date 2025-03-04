@@ -63,12 +63,18 @@
 	<object class="EventAutomatableProperties" id="{f8590641-b766-4032-9326-6fe2fa24fafc}" />
 	<object class="MarkerTrack" id="{dbeee318-0120-40c8-8057-18c15762be93}" />
 	<object class="GroupTrack" id="{e9e8d428-edf0-4e70-905e-9109ace0f94f}">
+		<relationship name="modules">
+			<destination>{c35a62cd-6944-4661-bdf2-3b99dab7bc4d}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{66493aba-213f-43a4-8034-30675ce7870d}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{6eadae9d-56ef-4737-8d54-e94a58b0b9f7}" />
 	<object class="ParameterProxy" id="{79ededcd-2e67-43f4-a8c3-f02de8393c3c}">
+		<relationship name="modules">
+			<destination>{c35a62cd-6944-4661-bdf2-3b99dab7bc4d}</destination>
+		</relationship>
 		<relationship name="preset">
 			<destination>{35a06c86-9a84-4150-b7c2-053542971b68}</destination>
 		</relationship>
@@ -90,6 +96,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4e85aacd-aeda-403b-bb18-f87e5f381e92}" />
+	<object class="MultiSound" id="{c35a62cd-6944-4661-bdf2-3b99dab7bc4d}">
+		<property name="length">
+			<value>2</value>
+		</property>
+	</object>
 	<object class="EventMixerGroup" id="{66493aba-213f-43a4-8034-30675ce7870d}">
 		<property name="name">
 			<value>PlayerShotgunShoot</value>
