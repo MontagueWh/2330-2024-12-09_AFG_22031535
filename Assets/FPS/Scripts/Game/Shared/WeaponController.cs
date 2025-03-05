@@ -131,15 +131,6 @@ namespace Unity.FPS.Game
         bool m_WantsToShoot = false;
 
         public FMODUnity.EventReference shootAudioEvent;
-        /*public FMODUnity.EventReference changeWeaponAudioEvent;
-        public FMODUnity.EventReference continuousShootStartAudioEvent;
-        public FMODUnity.EventReference continuousShootLoopAudioEvent;
-        public FMODUnity.EventReference continuousShootEndAudioEvent;
-
-        FMOD.Studio.EventInstance shootAudioInstance;
-        FMOD.Studio.EventInstance continuousShootStartAudioInstance;
-        FMOD.Studio.EventInstance continuousShootLoopAudioInstance;
-        FMOD.Studio.EventInstance continuousShootEndAudioInstance;*/
 
         public UnityAction OnShoot;
         public event Action OnShootProcessed;
@@ -184,9 +175,6 @@ namespace Unity.FPS.Game
             DebugUtility.HandleErrorIfNullGetComponent<AudioSource, WeaponController>(m_ShootAudioSource, this,
                 gameObject);
 
-            //continuousShootStartAudioInstance = FMODUnity.RuntimeManager.CreateInstance(continuousShootStartAudioEvent);
-            //continuousShootLoopAudioInstance = FMODUnity.RuntimeManager.CreateInstance(continuousShootLoopAudioEvent);
-
 
             if (UseContinuousShootSound)
             {
@@ -196,8 +184,6 @@ namespace Unity.FPS.Game
                 m_ContinuousShootAudioSource.outputAudioMixerGroup =
                     AudioUtility.GetAudioGroup(AudioUtility.AudioGroups.WeaponShoot);
                 m_ContinuousShootAudioSource.loop = true;
-
-                //FMODUnity.RuntimeManager.AttachInstanceToGameObject(continuousShootLoopAudioInstance, gameObject);
             }
 
             if (HasPhysicalBullets)
@@ -211,14 +197,6 @@ namespace Unity.FPS.Game
                     m_PhysicalAmmoPool.Enqueue(shell.GetComponent<Rigidbody>());
                 }
             }
-        }
-
-        void OnDestroy()
-        {
-            /*continuousShootLoopAudioInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            continuousShootLoopAudioInstance.release();
-            continuousShootEndAudioInstance.release();
-            continuousShootStartAudioInstance.release();*/
         }
 
         public void AddCarriablePhysicalBullets(int count) => m_CarriedPhysicalBullets = Mathf.Max(m_CarriedPhysicalBullets + count, MaxAmmo);
@@ -335,16 +313,6 @@ namespace Unity.FPS.Game
                         m_ShootAudioSource.PlayOneShot(ShootSfx);
                         m_ShootAudioSource.PlayOneShot(ContinuousShootStartSfx);
                         m_ContinuousShootAudioSource.Play();
-
-                        //continuousShootLoopAudioInstance.start();
-                    }
-                }
-
-                else  // Player stopped shooting
-                {
-                    if (m_ContinuousShootAudioSource.isPlaying)
-                    {
-                        //continuousShootLoopAudioInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                     }
                 }
             }
@@ -358,8 +326,6 @@ namespace Unity.FPS.Game
             {
 
                 m_ShootAudioSource.PlayOneShot(ChangeWeaponSfx);
-
-                //FMODUnity.RuntimeManager.PlayOneShot(changeWeaponAudioEvent, transform.position);
             }
 
             IsWeaponActive = show;
@@ -473,10 +439,6 @@ namespace Unity.FPS.Game
                 ProjectileBase newProjectile = Instantiate(ProjectilePrefab, WeaponMuzzle.position,
                     Quaternion.LookRotation(shotDirection));
                 newProjectile.Shoot(this);
-
-                // Attach FMOD event to the projectile
-                //shootAudioInstance = FMODUnity.RuntimeManager.CreateInstance(shootAudioEvent);
-                //shootAudioInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(newProjectile.gameObject));
             }
 
             // muzzle flash
@@ -503,12 +465,7 @@ namespace Unity.FPS.Game
             if (ShootSfx && !UseContinuousShootSound)
             {
                 m_ShootAudioSource.PlayOneShot(ShootSfx);
-
                 FMODUnity.RuntimeManager.PlayOneShot(shootAudioEvent, transform.position);
-
-                //shootAudioInstance.start();
-                //shootAudioInstance.release(); // Ensure it releases once finished
-
             }
 
             // Trigger attack animation if there is any

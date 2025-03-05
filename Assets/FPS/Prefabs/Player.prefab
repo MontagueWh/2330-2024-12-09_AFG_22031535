@@ -472,13 +472,6 @@ MonoBehaviour:
   JumpSfx: {fileID: 8300000, guid: 13b59a14d34add64d84a623867546ff1, type: 3}
   LandSfx: {fileID: 8300000, guid: d0f1afed8fa916244af6ca73579ded67, type: 3}
   FallDamageSfx: {fileID: 8300000, guid: ef980d09b569380459e609fe90ef1db2, type: 3}
-  FallDamageAudioEvent:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   RecievesFallDamage: 1
   MinSpeedForFallDamage: 20
   MaxSpeedForFallDamage: 40
@@ -504,7 +497,14 @@ MonoBehaviour:
       Data2: 1119744154
       Data3: 1812977814
       Data4: -597620341
-    Path: event:/SFX/Player/PlayerDeath
+    Path: event:/SFX/SFX3
+  OnHealedAudioEvent:
+    Guid:
+      Data1: -924469648
+      Data2: 1257523355
+      Data3: 960457917
+      Data4: -1130826210
+    Path: event:/SFX/SFX4
 --- !u!114 &298744117520805562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,13 +562,6 @@ MonoBehaviour:
   RefillDurationInTheAir: 5
   RefillDelay: 1
   JetpackSfx: {fileID: 8300000, guid: 01a15bd1861d7914abbedc36aad1f4d6, type: 3}
-  JetpackAudioEvent:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
 --- !u!143 &3122855503829242450
 CharacterController:
   m_ObjectHideFlags: 0
