@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{1b22f3dc-6e7b-499e-9775-c5aaca94db4e}">
 		<property name="name">
-			<value>SFX5</value>
+			<value>Jetpack</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

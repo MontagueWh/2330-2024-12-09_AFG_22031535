@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{e67d2e41-f09a-42bd-96d8-0f6c8b0961dc}">
 		<property name="name">
-			<value>SFX3</value>
+			<value>PlayerDeath</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

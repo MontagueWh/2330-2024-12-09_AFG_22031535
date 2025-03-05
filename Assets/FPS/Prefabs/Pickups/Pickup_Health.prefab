@@ -109,7 +109,7 @@ MonoBehaviour:
       Data2: 1257523355
       Data3: 960457917
       Data4: -1130826210
-    Path: event:/SFX/SFX4
+    Path: event:/SFX/Player/Heal
 --- !u!114 &6275561476046798665
 MonoBehaviour:
   m_ObjectHideFlags: 0

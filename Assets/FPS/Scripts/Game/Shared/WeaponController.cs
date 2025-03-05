@@ -130,8 +130,8 @@ namespace Unity.FPS.Game
         AudioSource m_ContinuousShootAudioSource = null;
         bool m_WantsToShoot = false;
 
-        /*public FMODUnity.EventReference shootAudioEvent;
-        public FMODUnity.EventReference changeWeaponAudioEvent;
+        public FMODUnity.EventReference shootAudioEvent;
+        /*public FMODUnity.EventReference changeWeaponAudioEvent;
         public FMODUnity.EventReference continuousShootStartAudioEvent;
         public FMODUnity.EventReference continuousShootLoopAudioEvent;
         public FMODUnity.EventReference continuousShootEndAudioEvent;
@@ -503,6 +503,8 @@ namespace Unity.FPS.Game
             if (ShootSfx && !UseContinuousShootSound)
             {
                 m_ShootAudioSource.PlayOneShot(ShootSfx);
+
+                FMODUnity.RuntimeManager.PlayOneShot(shootAudioEvent, transform.position);
 
                 //shootAudioInstance.start();
                 //shootAudioInstance.release(); // Ensure it releases once finished

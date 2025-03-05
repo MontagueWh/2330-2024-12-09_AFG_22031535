@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{1c645b82-b6f1-474d-9cbc-6c60c09f87b7}">
 		<property name="name">
-			<value>SFX6</value>
+			<value>FallDamage</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -106,7 +106,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{60a3ab07-4452-4874-8e87-c9ae9150aa8b}">
 		<property name="name">
-			<value>PlayerFall-Damage</value>
+			<value>FallDamage</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{30e6a909-3bba-47a9-9d6c-4068a2b0f42e}</destination>

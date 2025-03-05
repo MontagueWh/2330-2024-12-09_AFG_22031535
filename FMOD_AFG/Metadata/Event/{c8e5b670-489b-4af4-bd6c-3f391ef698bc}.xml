@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{c8e5b670-489b-4af4-bd6c-3f391ef698bc}">
 		<property name="name">
-			<value>SFX4</value>
+			<value>Heal</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -102,7 +102,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{f13bd460-81e7-483a-ac32-4f4eacf08dd2}">
 		<property name="name">
-			<value>PlayerHeal</value>
+			<value>Heal</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{a6d1476a-857c-4834-bfe5-28a15562774c}</destination>
