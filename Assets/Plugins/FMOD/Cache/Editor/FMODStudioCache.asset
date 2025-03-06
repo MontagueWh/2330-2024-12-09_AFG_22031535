@@ -81,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 900
+--- !u!114 &-5503570014812981763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/PlayerShotgunShot
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/PlayerShotgunShot
+  Guid:
+    Data1: 1750228653
+    Data2: 1116713073
+    Data3: -1241237886
+    Data4: 2078203209
+  Banks:
+  - {fileID: 6830452601857237519}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-4498815387300975772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,33 +189,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 238828
---- !u!114 &-2426775091993008263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/PlayerMainGunSingleShot
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/PlayerMainGunSingleShot
-  Guid:
-    Data1: 290041674
-    Data2: 1148817209
-    Data3: 328168600
-    Data4: 2116221445
-  Banks:
-  - {fileID: 6830452601857237519}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-2234222327306135217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,20 +268,20 @@ MonoBehaviour:
   - {fileID: -8705560381509061079}
   - {fileID: 8442588989437033537}
   - {fileID: 3897556042501672032}
-  - {fileID: 3096138716657034136}
   - {fileID: -2234222327306135217}
-  - {fileID: -2426775091993008263}
-  - {fileID: 1863253319239809711}
   - {fileID: -4498815387300975772}
   - {fileID: 2948470879383560047}
+  - {fileID: 9049513707146578880}
+  - {fileID: -5503570014812981763}
+  - {fileID: 505616503975782084}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6830452601857237519}
   StringsBanks:
   - {fileID: 6379485343548549748}
-  cacheTime: 638768646826271095
+  cacheTime: 638768963910707876
   cacheVersion: 131846
---- !u!114 &1863253319239809711
+--- !u!114 &505616503975782084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,9 +291,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/PlayerMainGunContinuousShoot
+  m_Name: event:/SFX/Player/PlayerGunShoot
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/PlayerMainGunContinuousShoot
+  Path: event:/SFX/Player/PlayerGunShoot
   Guid:
     Data1: -1149348366
     Data2: 1315381844
@@ -335,33 +335,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5779
---- !u!114 &3096138716657034136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/PlayerShotgunShoot
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/PlayerShotgunShoot
-  Guid:
-    Data1: 1750228653
-    Data2: 1116713073
-    Data3: -1241237886
-    Data4: 2078203209
-  Banks:
-  - {fileID: 6830452601857237519}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &3327361668575507428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,10 +404,10 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638768646826271095
+  lastModified: 638768963910707876
   FileSizes:
   - Name: Desktop
-    Value: 1486
+    Value: 1470
   Exists: 1
 --- !u!114 &6830452601857237519
 MonoBehaviour:
@@ -451,10 +424,10 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638768646826243692
+  lastModified: 638768963910692996
   FileSizes:
   - Name: Desktop
-    Value: 6515808
+    Value: 6515232
   Exists: 1
 --- !u!114 &8442588989437033537
 MonoBehaviour:
@@ -483,3 +456,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 211
+--- !u!114 &9049513707146578880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/PlayerGunSingleShot
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/PlayerGunSingleShot
+  Guid:
+    Data1: 290041674
+    Data2: 1148817209
+    Data3: 328168600
+    Data4: 2116221445
+  Banks:
+  - {fileID: 6830452601857237519}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 99
