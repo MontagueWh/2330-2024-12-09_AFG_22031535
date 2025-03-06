@@ -10,7 +10,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 0
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002B2C842CEC8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002B39B9FE4A8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -19,5 +19,83 @@
 [LOG] Manager::init                            : done.
 [LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
 [LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
-[LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 7
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6480608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 34624
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000B9A8AFED78
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF86175D3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF86175D3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF86175D4C0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF86175D580
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002B22A608628
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 4
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='MainGunShootSingle4', format=5, channels=2, frequency=48000, lengthbytes=1664, lengthpcm=4799, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.134222.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6480608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 34624
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000B9A8AFED78
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF86175D3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF86175D3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF86175D4C0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF86175D580
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002B22A608628
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 4
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='MainGunShootSingle1', format=5, channels=2, frequency=48000, lengthbytes=1600, lengthpcm=4798, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.120375.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6480608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 34624
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000B9A8AFED78
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF86175D3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF86175D3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF86175D4C0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF86175D580
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002B22A608628
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 4
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='MainGunShootSingle3', format=5, channels=2, frequency=48000, lengthbytes=1696, lengthpcm=4792, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125187.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 6480608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 34624
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000B9A8AFED78
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF86175D3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF86175D3A0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF86175D4C0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF86175D580
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002B22A608628
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 4
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='MainGunShootSingle2', format=5, channels=2, frequency=48000, lengthbytes=1792, lengthpcm=4799, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.135077.
+[LOG] SoundI::release                          :  (000002B2C4EB8288)
+[LOG] SoundI::release                          :     MainGunShootSingle2 (000002B3E7723EE8)
+[LOG] SoundI::release                          :  (000002B2C4EB7BA8)
+[LOG] SoundI::release                          :     MainGunShootSingle3 (000002B3E77226E8)
+[LOG] SoundI::release                          :  (000002B2C4EB9E08)
+[LOG] SoundI::release                          :     MainGunShootSingle4 (000002B3E7723168)
+[LOG] SoundI::release                          :  (000002B2C4EB9CA8)
+[LOG] SoundI::release                          :     MainGunShootSingle1 (000002B3E7723BE8)
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::closeInternal                   : Closed.
