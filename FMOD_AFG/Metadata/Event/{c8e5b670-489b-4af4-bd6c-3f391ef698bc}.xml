@@ -32,7 +32,7 @@
 			<destination>{05ad3e78-789f-4537-894b-5b623cdbeed3}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{9b0fb487-5dae-4f60-941d-924c9e8d8133}</destination>
+			<destination>{eac35ac5-8b94-4609-b1cd-5d05ab6580ce}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{6422b2fb-bc8c-4166-9930-afefe884d441}">
@@ -116,6 +116,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{69fc5772-8548-43f9-91e6-e9a685d6844c}">
 		<relationship name="effects">
+			<destination>{5864cd82-add8-4729-8a12-0e6107f224b4}</destination>
 			<destination>{3e5a480b-b6c7-4a70-82b1-cbadd8432b67}</destination>
 		</relationship>
 	</object>
@@ -155,6 +156,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4a4d3da7-0858-4883-a53d-e90e65c49eee}" />
+	<object class="DelayEffect" id="{5864cd82-add8-4729-8a12-0e6107f224b4}">
+		<property name="delay">
+			<value>200</value>
+		</property>
+		<property name="feedback">
+			<value>13.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{3e5a480b-b6c7-4a70-82b1-cbadd8432b67}" />
 	<object class="MixerBusFader" id="{7a138742-bc2f-4dce-aaf2-2e6eef35637e}" />
 </objects>

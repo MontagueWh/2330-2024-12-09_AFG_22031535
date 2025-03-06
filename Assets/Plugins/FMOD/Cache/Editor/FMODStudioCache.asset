@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 901541527
     Data4: 1441649873
   Banks:
-  - {fileID: -1823630893062672073}
+  - {fileID: 6830452601857237519}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
     Data3: 1659289254
     Data4: 1512716199
   Banks:
-  - {fileID: -2238150358703541330}
+  - {fileID: 6830452601857237519}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -73,7 +73,7 @@ MonoBehaviour:
     Data3: 1416922759
     Data4: 1553182821
   Banks:
-  - {fileID: -2238150358703541330}
+  - {fileID: 6830452601857237519}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -81,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 900
+--- !u!114 &-4498815387300975772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Footsteps
+  Guid:
+    Data1: 1112390851
+    Data2: 1284564677
+    Data3: 3644300
+    Data4: -440231600
+  Banks:
+  - {fileID: 6830452601857237519}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 799
 --- !u!114 &-3873815664754539634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,7 +127,7 @@ MonoBehaviour:
     Data3: 260725689
     Data4: -34101211
   Banks:
-  - {fileID: 4062010694870971746}
+  - {fileID: 6830452601857237519}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -127,7 +154,7 @@ MonoBehaviour:
     Data3: 1685078191
     Data4: -599328370
   Banks:
-  - {fileID: 4062010694870971746}
+  - {fileID: 6830452601857237519}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -135,7 +162,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 238828
---- !u!114 &-2238150358703541330
+--- !u!114 &-2426775091993008263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,17 +171,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Player.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/PlayerMainGunSingleShot
   m_EditorClassIdentifier: 
-  Path: FMOD_AFG/Build/Desktop/Player.bank
-  Name: Player
-  StudioPath: bank:/Player
-  lastModified: 638768119463925077
-  FileSizes:
-  - Name: Desktop
-    Value: 417472
-  Exists: 1
+  Path: event:/SFX/Player/PlayerMainGunSingleShot
+  Guid:
+    Data1: 290041674
+    Data2: 1148817209
+    Data3: 328168600
+    Data4: 2116221445
+  Banks:
+  - {fileID: 6830452601857237519}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2234222327306135217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +208,7 @@ MonoBehaviour:
     Data3: -1429899881
     Data4: 1323013322
   Banks:
-  - {fileID: -2238150358703541330}
+  - {fileID: 6830452601857237519}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -182,26 +216,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 26142
---- !u!114 &-1823630893062672073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Atmos.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_AFG/Build/Desktop/Atmos.bank
-  Name: Atmos
-  StudioPath: bank:/Atmos
-  lastModified: 638768005681739726
-  FileSizes:
-  - Name: Desktop
-    Value: 1924736
-  Exists: 1
 --- !u!114 &-365536644237355884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,7 +235,7 @@ MonoBehaviour:
     Data3: 1812977814
     Data4: -597620341
   Banks:
-  - {fileID: -2238150358703541330}
+  - {fileID: 6830452601857237519}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -244,11 +258,6 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 6379485343548549748}
   - {fileID: 6830452601857237519}
-  - {fileID: -1823630893062672073}
-  - {fileID: 4463675290482343213}
-  - {fileID: 4062010694870971746}
-  - {fileID: -2238150358703541330}
-  - {fileID: 2307459326437796317}
   EditorEvents:
   - {fileID: 3327361668575507428}
   - {fileID: -2513037366682406013}
@@ -256,20 +265,23 @@ MonoBehaviour:
   - {fileID: -8813751975949020060}
   - {fileID: -6335490401152330572}
   - {fileID: -365536644237355884}
-  - {fileID: 4221023273055063073}
   - {fileID: -8705560381509061079}
   - {fileID: 8442588989437033537}
   - {fileID: 3897556042501672032}
   - {fileID: 3096138716657034136}
   - {fileID: -2234222327306135217}
+  - {fileID: -2426775091993008263}
+  - {fileID: 1863253319239809711}
+  - {fileID: -4498815387300975772}
+  - {fileID: 2948470879383560047}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6830452601857237519}
   StringsBanks:
   - {fileID: 6379485343548549748}
-  cacheTime: 638768119463925077
+  cacheTime: 638768646826271095
   cacheVersion: 131846
---- !u!114 &2307459326437796317
+--- !u!114 &1863253319239809711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,17 +290,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Turret.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/PlayerMainGunContinuousShoot
   m_EditorClassIdentifier: 
-  Path: FMOD_AFG/Build/Desktop/Turret.bank
-  Name: Turret
-  StudioPath: bank:/Turret
-  lastModified: 638768005975845765
-  FileSizes:
-  - Name: Desktop
-    Value: 506
-  Exists: 1
+  Path: event:/SFX/Player/PlayerMainGunContinuousShoot
+  Guid:
+    Data1: -1149348366
+    Data2: 1315381844
+    Data3: -2026539353
+    Data4: -2058148303
+  Banks:
+  - {fileID: 6830452601857237519}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
+--- !u!114 &2948470879383560047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Intro VO
+  m_EditorClassIdentifier: 
+  Path: event:/Intro VO
+  Guid:
+    Data1: 500307846
+    Data2: 1280955811
+    Data3: -531001698
+    Data4: -1378724007
+  Banks:
+  - {fileID: 6830452601857237519}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5779
 --- !u!114 &3096138716657034136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,14 +354,14 @@ MonoBehaviour:
     Data3: -1241237886
     Data4: 2078203209
   Banks:
-  - {fileID: -2238150358703541330}
+  - {fileID: 6830452601857237519}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1000
+  Length: 0
 --- !u!114 &3327361668575507428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +381,7 @@ MonoBehaviour:
     Data3: -1391987828
     Data4: -2110476853
   Banks:
-  - {fileID: -1823630893062672073}
+  - {fileID: 6830452601857237519}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -362,7 +408,7 @@ MonoBehaviour:
     Data3: 1617738908
     Data4: -1215848512
   Banks:
-  - {fileID: -2238150358703541330}
+  - {fileID: 6830452601857237519}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -370,73 +416,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 487
---- !u!114 &4062010694870971746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_AFG/Build/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638768005958646847
-  FileSizes:
-  - Name: Desktop
-    Value: 4093728
-  Exists: 1
---- !u!114 &4221023273055063073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/PlayerMainGunShoot
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/PlayerMainGunShoot
-  Guid:
-    Data1: 290041674
-    Data2: 1148817209
-    Data3: 328168600
-    Data4: 2116221445
-  Banks:
-  - {fileID: -2238150358703541330}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &4463675290482343213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Hoverbot.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_AFG/Build/Desktop/Hoverbot.bank
-  Name: Hoverbot
-  StudioPath: bank:/Hoverbot
-  lastModified: 638768005681789659
-  FileSizes:
-  - Name: Desktop
-    Value: 506
-  Exists: 1
 --- !u!114 &6379485343548549748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,10 +431,10 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638768005682694390
+  lastModified: 638768646826271095
   FileSizes:
   - Name: Desktop
-    Value: 1540
+    Value: 1486
   Exists: 1
 --- !u!114 &6830452601857237519
 MonoBehaviour:
@@ -472,10 +451,10 @@ MonoBehaviour:
   Path: FMOD_AFG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638768005681902452
+  lastModified: 638768646826243692
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 6515808
   Exists: 1
 --- !u!114 &8442588989437033537
 MonoBehaviour:
@@ -496,7 +475,7 @@ MonoBehaviour:
     Data3: 960457917
     Data4: -1130826210
   Banks:
-  - {fileID: -2238150358703541330}
+  - {fileID: 6830452601857237519}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

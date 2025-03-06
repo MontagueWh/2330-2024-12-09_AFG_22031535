@@ -119,6 +119,7 @@ namespace Unity.FPS.Game
 
         [Tooltip("sound played when shooting")]
         public AudioClip ShootSfx;
+        //public FMODUnity.EventReference shootAudioEvent;
 
         [Tooltip("Sound played when changing to this weapon")]
         public AudioClip ChangeWeaponSfx;
@@ -129,8 +130,6 @@ namespace Unity.FPS.Game
         public AudioClip ContinuousShootEndSfx;
         AudioSource m_ContinuousShootAudioSource = null;
         bool m_WantsToShoot = false;
-
-        public FMODUnity.EventReference shootAudioEvent;
 
         public UnityAction OnShoot;
         public event Action OnShootProcessed;
@@ -390,6 +389,8 @@ namespace Unity.FPS.Game
                 return true;
             }
 
+            //FMODUnity.RuntimeManager.PlayOneShot(shootAudioEvent, WeaponMuzzle.position);
+
             return false;
         }
 
@@ -465,13 +466,17 @@ namespace Unity.FPS.Game
             if (ShootSfx && !UseContinuousShootSound)
             {
                 m_ShootAudioSource.PlayOneShot(ShootSfx);
-                FMODUnity.RuntimeManager.PlayOneShot(shootAudioEvent, transform.position);
+                //FMODUnity.RuntimeManager.PlayOneShot(shootAudioEvent, WeaponMuzzle.position);
             }
+
+            //FMODUnity.RuntimeManager.PlayOneShot(shootAudioEvent, transform.position);
 
             // Trigger attack animation if there is any
             if (WeaponAnimator)
                 WeaponAnimator.SetTrigger(k_AnimAttackParameter);
 
+            //FMODUnity.RuntimeManager.PlayOneShot(shootAudioEvent, WeaponMuzzle.position);
+            
             OnShoot?.Invoke();
             OnShootProcessed?.Invoke();
         }

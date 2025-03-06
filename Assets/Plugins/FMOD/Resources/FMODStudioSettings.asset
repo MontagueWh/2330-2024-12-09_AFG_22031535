@@ -550,12 +550,7 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks:
-  - Atmos
-  - Hoverbot
-  - Music
-  - Player
-  - Turret
+  Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
