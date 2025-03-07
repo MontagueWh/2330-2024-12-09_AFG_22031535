@@ -24,6 +24,7 @@ namespace Unity.FPS.AI
 
         public ParticleSystem[] OnDetectVfx;
         public AudioClip OnDetectSfx;
+        public FMODUnity.EventReference OnDetectAudioEvent;
 
         [Header("Sound")] public AudioClip MovementSound;
         public MinMaxFloat PitchDistortionMovementSpeed;
@@ -146,6 +147,7 @@ namespace Unity.FPS.AI
             for (int i = 0; i < OnDetectVfx.Length; i++)
             {
                 OnDetectVfx[i].Play();
+                FMODUnity.RuntimeManager.PlayOneShot(OnDetectAudioEvent, transform.position);
             }
 
             if (OnDetectSfx)

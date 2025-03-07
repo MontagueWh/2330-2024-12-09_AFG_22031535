@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{f6c9e88d-a5ce-420b-8c07-7ccb304266fc}">
+		<property name="name">
+			<value>Hoverbot</value>
+		</property>
+		<relationship name="folder">
+			<destination>{1876c752-d0a2-41b7-9ce2-f4a3e27161b1}</destination>
+		</relationship>
+	</object>
+</objects>
