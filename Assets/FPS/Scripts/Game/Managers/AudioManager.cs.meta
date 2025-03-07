@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: 1d54177cab788734b8ecb4674c6e5328
-AssetOrigin:
-  serializedVersion: 1
-  productId: 156015
-  packageName: Unity Learn | FPS Microgame | URP
-  packageVersion: 3.1.0
-  assetPath: Assets/FPS/Scripts/Game/Managers/AudioManager.cs
-  uploadId: 627568
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -16,3 +9,10 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156015
+  packageName: Unity Learn | FPS Microgame | URP
+  packageVersion: 3.1.0
+  assetPath: Assets/FPS/Scripts/Game/Managers/AudioManager.cs
+  uploadId: 627568
